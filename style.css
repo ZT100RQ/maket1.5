@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'TTLakes Regular';
+    src: url('fonts/TTLakes/TTLakes-Regular.eot');
+    src: url('fonts/TTLakes/TTLakes-Regular.ttf') format('truetype'),
+    url('fonts/TTLakes/TTLakes-Regular.woff') format('woff');
+
+
+}
+
+
+*, *::before,::after {
+    transition: .2s ease-in-out;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+body {
+    min-width: 320px;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0;
+    background: rgba(248, 248, 248, 1);
+}
+
+.swiper__header {
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    max-width:1120px;
+}
+.swiper__title {
+font-family: 'TTLakes Regular';
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.2px;
+text-align: left;
+text-transform: uppercase;
+padding: 16px 16px;
+color: rgba(126, 126, 130, 1);
+font-weight: 600;
+
+}
+
+
+.swiper {
+    padding-left: 16px;
+    width: 100%;
+    height: 100%;
+    padding-top: 16px;
+
+}
+
+.swiper-content {
+    max-width: 1120px;
+}
+
+.swiper-slide {
+    width: 240px;
+    height: 74px;
+    background-position: 18% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    border: 1px solid rgba(234, 234, 234, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    margin-right: 16px;
+}
+
+
+/* Бэк для карточек */
+
+.swiper-slide:nth-child(1) {
+    background-image: url('images/Acer.png');
+}
+.swiper-slide:nth-child(2) {
+    background-image: url('images/Apple.png');
+}
+.swiper-slide:nth-child(3) {
+    background-image: url('images/Bosch.png');
+}
+.swiper-slide:nth-child(4) {
+    background-image: url('images/HP.png');
+}
+.swiper-slide:nth-child(5) {
+    background-image: url('images/Lenovo.png');
+}
+.swiper-slide:nth-child(6) {
+    background-image: url('images/Samsung.png');
+}
+.swiper-slide:nth-child(7) {
+    background-image: url('images/SONY.png');
+}
+.swiper-slide:nth-child(8) {
+    background-image: url('images/ViewSonic.png');
+}
+.swiper-slide:nth-child(9) {
+    background-image: url('images/Acer.png');
+}
+.swiper-slide:nth-child(10) {
+    background-image: url('images/Apple.png');
+}
+.swiper-slide:nth-child(11) {
+    background-image: url('images/Bosch.png');
+}
+
+.button-link {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(255, 62, 121, 1);
+    background-image: url(images/icon/dropdown.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-left: auto;
+    
+}
+.button-link:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+.button-showmore {
+    display: none;
+    width: 134px;
+    height: 24px;
+    font-family: 'TTLakes Regular';
+    border: 0;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(27, 28, 33, 1);
+    background-image: url('images/icon/expand.svg');
+    background-repeat: no-repeat;
+    margin-left: 16px;
+    margin-top: 24px;
+    text-align: end;
+}
+
+.swiper-pagination {
+    margin-top: 16px;
+    position: relative;
+}
+@media screen and (min-width: 320) {
+    .swiper-wrapper {
+        width: auto;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .swiper-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 16px;
+        height: 173px;
+    }
+
+    .button-showmore {
+        display: inline-block;
+        width: auto;
+        padding-left: 30px;
+    }
+    .button-showmore:hover {
+        opacity: 0.5;
+    }
+    
+    .swiper__title {
+        padding-left: 24px;
+    }
+
+    .swiper {
+        padding-left: 24px;
+    }
+
+    .swiper-slide {
+        width: 224px;
+    }
+
+}
+@media screen and (min-width: 1120px){
+
+    .swiper-slide {
+        width: 240px;
+    }
+    .swiper-title {
+        padding-left: 32px;
+    }
+}
