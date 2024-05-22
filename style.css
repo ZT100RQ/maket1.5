@@ -53,7 +53,6 @@ font-weight: 600;
     border: 1px solid rgba(234, 234, 234, 1);
     background-color: rgba(255, 255, 255, 1);
     border-radius: 6px;
-    margin-right: 16px;
     justify-content: space-between;
     padding: 0 16px;
     align-items: center;  
@@ -73,27 +72,15 @@ font-weight: 600;
     transform: scale(1.1);
     opacity: 0.5;
 }
-.button-showmore {
-    display: none;
-    width: 134px;
-    height: 24px;
-    font-family: 'TTLakes Regular';
-    border: 0;
-    background-color: transparent;
-    font-weight: 600;
-    font-size: 16px;
-    color: rgba(27, 28, 33, 1);
-    background-image: url('images/icon/expand.svg');
-    background-repeat: no-repeat;
-    margin-left: 16px;
-    margin-top: 24px;
-    text-align: end;
-}
+
 .swiper-pagination {
     margin-top: 16px;
     position: relative;
 }
 
+.button-showmore {
+    display: none;
+}
 @media screen and (min-width: 320) {
     .swiper-wrapper {
         width: auto;
@@ -108,12 +95,24 @@ font-weight: 600;
         row-gap: 16px;
         height: 173px;
     }
-
     .button-showmore {
         display: inline-block;
         width: auto;
+        height: 24px;
+        font-family: 'TTLakes Regular';
+        border: 0;
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 16px;
+        color: rgba(27, 28, 33, 1);
+        background-image: url('images/icon/expand.svg');
+        background-repeat: no-repeat;
+        margin-left: 16px;
+        margin-top: 20px;
+        text-align: end;
         padding-left: 30px;
     }
+    
     .button-showmore:hover {
         opacity: 0.5;
     }
@@ -128,6 +127,16 @@ font-weight: 600;
 
     .swiper-slide {
         width: 224px;
+    }
+
+    /* Для обработчика */
+    .swiper-wrapper--visible {
+        height: auto;
+        overflow: visible;
+    }
+    
+    .button-showmore--hidden {
+    
     }
 
 }
