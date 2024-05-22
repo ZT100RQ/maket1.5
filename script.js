@@ -29,11 +29,10 @@ const swiper = new Swiper('.swiper', {
 });
 
 
+let btnShowMore = document.querySelector('.button-showmore');
+let swiperMore = document.querySelector('.swiper-wrapper');
 
-function showMore()  {
-    let btnShowMore = document.querySelector('.button-showmore');
-    let swiperMore = document.querySelector('.swiper-wrapper');
-
+btnShowMore.addEventListener('click', function (){
     if (swiperMore.style.overflow !== "visible") {
         swiperMore.style.overflow = "visible";
         swiperMore.style.height = "auto";
@@ -45,37 +44,4 @@ function showMore()  {
         btnShowMore.innerHTML = "Показать все";
         btnShowMore.style.background = 'url(images/icon/expand.svg) no-repeat';
     }
-  }
-
-
-
-
-
-  
-
-
-
-
-
-// function showMore() {
-//     swiperStyle.overflow = (swiperStyle.overflow = "visible") ? "hidden" : "visible";
-// }
-
-
-
-
-
-
-// btnShowMore.onclick = () => {
-    
-//     if (swiperStyle.overflow == "hidden") {
-//         btnStyle.textContent = 'Показать все';
-//         btnStyle.background = "url('images/icon/expand.svg') no-repeat";
-//     } else { 
-//         btnStyle.textContent = 'Скрыть';
-//         btnStyle.background = "url('images/icon/expand-back.svg') no-repeat";
-//         swiperStyle.overflow = "visible";
-//         swiperStyle.height = "100%";
-//     }
-// }
-
+});
