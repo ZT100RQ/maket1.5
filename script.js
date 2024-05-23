@@ -43,19 +43,3 @@ btnShowMore.addEventListener('click', function(){
         swiperMore.classList.remove('swiper-wrapper--visible');
     }
 });
-
-
-
-// btnShowMore.addEventListener('click', function (){
-//     if (swiperMore.style.overflow !== "visible") {
-//         swiperMore.style.overflow = "visible";
-//         swiperMore.style.height = "auto";
-//         btnShowMore.innerHTML = "Скрыть";
-//         btnShowMore.style.background = 'url(images/icon/expand-back.svg) no-repeat';
-//     } else {           
-//         swiperMore.style.overflow = "hidden";
-//         swiperMore.style.height = "173px";
-//         btnShowMore.innerHTML = "Показать все";
-//         btnShowMore.style.background = 'url(images/icon/expand.svg) no-repeat';
-//     }
-// });
