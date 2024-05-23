@@ -32,16 +32,30 @@ const swiper = new Swiper('.swiper', {
 let btnShowMore = document.querySelector('.button-showmore');
 let swiperMore = document.querySelector('.swiper-wrapper');
 
-btnShowMore.addEventListener('click', function (){
-    if (swiperMore.style.overflow !== "visible") {
-        swiperMore.style.overflow = "visible";
-        swiperMore.style.height = "auto";
+btnShowMore.addEventListener('click', function(){
+    if(btnShowMore.innerHTML !== "Скрыть") {
         btnShowMore.innerHTML = "Скрыть";
-        btnShowMore.style.background = 'url(images/icon/expand-back.svg) no-repeat';
-    } else {           
-        swiperMore.style.overflow = "hidden";
-        swiperMore.style.height = "173px";
+        btnShowMore.classList.add('button-showmore--hidden')
+        swiperMore.classList.add('swiper-wrapper--visible'); 
+    } else {
         btnShowMore.innerHTML = "Показать все";
-        btnShowMore.style.background = 'url(images/icon/expand.svg) no-repeat';
+        btnShowMore.classList.remove('button-showmore--hidden')
+        swiperMore.classList.remove('swiper-wrapper--visible');
     }
 });
+
+
+
+// btnShowMore.addEventListener('click', function (){
+//     if (swiperMore.style.overflow !== "visible") {
+//         swiperMore.style.overflow = "visible";
+//         swiperMore.style.height = "auto";
+//         btnShowMore.innerHTML = "Скрыть";
+//         btnShowMore.style.background = 'url(images/icon/expand-back.svg) no-repeat';
+//     } else {           
+//         swiperMore.style.overflow = "hidden";
+//         swiperMore.style.height = "173px";
+//         btnShowMore.innerHTML = "Показать все";
+//         btnShowMore.style.background = 'url(images/icon/expand.svg) no-repeat';
+//     }
+// });

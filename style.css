@@ -129,14 +129,15 @@ font-weight: 600;
         width: 224px;
     }
 
-    /* Для обработчика */
+    /* Для обработчика кнопки*/
     .swiper-wrapper--visible {
         height: auto;
         overflow: visible;
     }
-    
+
     .button-showmore--hidden {
-    
+        background-image: url('images/icon/expand-back.svg');
+        background-repeat: no-repeat;
     }
 
 }
