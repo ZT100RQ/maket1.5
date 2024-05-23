@@ -93,7 +93,8 @@ font-weight: 600;
         flex-direction: row;
         flex-wrap: wrap;
         row-gap: 16px;
-        height: 173px;
+        height: 176px;
+
     }
     .button-showmore {
         display: inline-block;
